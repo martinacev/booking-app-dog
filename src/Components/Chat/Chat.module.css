@@ -1,0 +1,32 @@
+.container {
+	width: 100%;
+	max-height: 500px;
+	overflow-y: scroll; 
+	margin-top: 10px;
+
+	scrollbar-width: thin; 
+	scrollbar-color: transparent transparent; 
+}
+
+.container::-webkit-scrollbar {
+	width: 1px; 
+}
+
+.container::-webkit-scrollbar-thumb {
+	background-color: transparent; 
+}
+
+.container::-webkit-scrollbar-track {
+	background-color: transparent; 
+}
+
+.input {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	height: 30px;
+	width: 100%;
+}
