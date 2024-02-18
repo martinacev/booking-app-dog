@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Booking from "./Components/Booking/Booking";
 import Mobile from "./Components/Mobile/Mobile";
-import './App.css';
+import "./App.css";
+import Reservation from "./Components/Reservation/Reservation";
 
 function App() {
 	return (
@@ -17,8 +18,7 @@ function App() {
 							</>
 						}
 					/>
-
-					{/* Add more routes if needed */}
+					<Route path="/reservation" element={<Reservation />} />
 				</Routes>
 			</div>
 		</Router>
