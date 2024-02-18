@@ -1,7 +1,15 @@
 import classes from "./Booking.module.css";
 import dog from "../../../public/woof.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Booking = () => {
+	const navigate = useNavigate();
+
+	const navigateButton = () => {
+		navigate("/reservation");
+		
+	};
+
 	return (
 		<div className={classes.container}>
 			<div className={classes.bgImg}>
@@ -15,7 +23,12 @@ const Booking = () => {
 								Simply tap, choose, and let the wagging begin!
 								Your pup`s happiness is just a few clicks away.
 							</p>
-							<button className={classes.btn}>BOOK HERE 🐶</button>
+							<button
+								onClick={navigateButton}
+								className={classes.btn}
+							>
+								BOOK HERE 🐶
+							</button>
 						</div>
 					</div>
 				</div>

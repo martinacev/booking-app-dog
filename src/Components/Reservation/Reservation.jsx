@@ -1,11 +1,13 @@
-import classes from './Reservation.module.css';
+import classes from "./Reservation.module.css";
 
 const Reservation = () => {
 	return (
-    <div className={classes.container}>
-        <p>Reserve here!</p>
-    </div>
-    );
+		<div className={classes.container}>
+			<div className={classes.register}>
+              
+            </div>
+		</div>
+	);
 };
 
 export default Reservation;
