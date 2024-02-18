@@ -2,8 +2,10 @@ import classes from "./Reservation.module.css";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import { Button } from "@mui/material";
+import back from "../../../public/back.png";
 
 const dogBreeds = [
+	"",
 	"German Shepherd",
 	"Bulldog",
 	"Labrador",
@@ -27,6 +29,9 @@ const dogBreeds = [
 const Reservation = () => {
 	return (
 		<div className={classes.container}>
+			<div className={classes.btn}>
+				<img className={classes.arrow} src={back} alt="back" />
+			</div>
 			<div className={classes.inputs}>
 				<TextField
 					sx={{
@@ -62,8 +67,8 @@ const Reservation = () => {
 				<div className={classes.payment}>
 					<TextField
 						sx={{
-                            display: "flex",
-                            alignItems: "center",
+							display: "flex",
+							alignItems: "center",
 							width: 200,
 							margin: 1,
 						}}
@@ -79,7 +84,17 @@ const Reservation = () => {
 						}}
 					/>
 
-					<Button sx={{width: 200, height: 50, display: "flex", alignItems: "center"}} variant="outlined">Find free Walker</Button>
+					<Button
+						sx={{
+							width: 200,
+							height: 50,
+							display: "flex",
+							alignItems: "center",
+						}}
+						variant="outlined"
+					>
+						Find free Walker
+					</Button>
 				</div>
 			</div>
 		</div>

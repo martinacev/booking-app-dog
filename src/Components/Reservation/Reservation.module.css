@@ -12,27 +12,47 @@
 .inputs {
 	width: 600px;
 	height: 300px;
-    border-radius: 10px;
+	border-radius: 10px;
 	background-color: #fff6e5;
 	border: 2px solid #ff7b5f;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    flex-direction: column;
+	flex-direction: column;
 }
 
 .menu {
-    max-height: 150px;
+	max-height: 150px;
 }
 
 .field {
-    display: flex;
+	display: flex;
 }
 
 .payment {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 100px;
 }
 
+.btn {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	border: 1px solid salmon;
+}
+
+.back {
+	width: 250px;
+	height: 30px;
+}
+
+.arrow {
+	width: 50px;
+	height: 30px;
+}
