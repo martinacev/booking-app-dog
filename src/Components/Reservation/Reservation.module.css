@@ -5,10 +5,34 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 100vh;
+	justify-content: center;
+	align-items: center;
 }
 
-.register {
-    display: flex;
-    align-items: center;
+.inputs {
+	width: 600px;
+	height: 300px;
+    border-radius: 10px;
+	background-color: #fff6e5;
+	border: 2px solid #ff7b5f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
 }
+
+.menu {
+    max-height: 150px;
+}
+
+.field {
+    display: flex;
+}
+
+.payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;
+}
+
