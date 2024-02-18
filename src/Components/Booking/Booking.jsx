@@ -7,7 +7,6 @@ const Booking = () => {
 
 	const navigateButton = () => {
 		navigate("/reservation");
-		
 	};
 
 	return (

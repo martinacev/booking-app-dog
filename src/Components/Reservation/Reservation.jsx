@@ -3,6 +3,8 @@ import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import { Button } from "@mui/material";
 import back from "../../../public/back.png";
+import { useNavigate } from "react-router-dom";
+
 
 const dogBreeds = [
 	"",
@@ -27,13 +29,20 @@ const dogBreeds = [
 ];
 
 const Reservation = () => {
+
+	const navigate = useNavigate();
+
+	const navigateButton = () => {
+		navigate("/")
+	}
+
 	return (
 		<div className={classes.container}>
-			<div className={classes.btn}>
+			<button onClick={navigateButton} className={classes.btn}>
 				<img className={classes.arrow} src={back} alt="back" />
-			</div>
+			</button>
 			<div className={classes.inputs}>
-				<TextField
+				<TextField 
 					sx={{
 						width: 400,
 						margin: 1,
@@ -43,7 +52,7 @@ const Reservation = () => {
 					variant="outlined"
 				/>
 
-				<TextField
+				<TextField 
 					sx={{
 						width: 400,
 						margin: 1,
@@ -65,7 +74,7 @@ const Reservation = () => {
 				</TextField>
 
 				<div className={classes.payment}>
-					<TextField
+					<TextField 
 						sx={{
 							display: "flex",
 							alignItems: "center",

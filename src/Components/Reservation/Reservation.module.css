@@ -41,10 +41,20 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin: 10px;
+	margin: 25px;
 	background-color: #ffffff;
 	border-radius: 20px;
 	border: 1px solid salmon;
+	transition: transform 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.btn:hover {
+	transform: scale(1.3);
+	background-color: #ff7b5f;
+	border: 2px solid #3f8097;
+	box-shadow: 0 0 0 5px #fff;
+	cursor: pointer;
 }
 
 .back {
