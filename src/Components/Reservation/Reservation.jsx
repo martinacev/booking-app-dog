@@ -4,7 +4,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { Button } from "@mui/material";
 import back from "../../../public/back.png";
 import { useNavigate } from "react-router-dom";
-
+import { useState } from "react";
 
 const dogBreeds = [
 	"",
@@ -29,12 +29,21 @@ const dogBreeds = [
 ];
 
 const Reservation = () => {
-
 	const navigate = useNavigate();
+	const [email, setEmail] = useState("");
+	const [emailError, setEmailError] = useState(false);
 
 	const navigateButton = () => {
-		navigate("/")
-	}
+		navigate("/");
+	};
+
+	const handleEmailChange = (e) => {
+		const inputEmail = e.target.value;
+		setEmail(inputEmail);
+
+		const isValidEmail = /\S+@\S+\.\S+/.test(inputEmail);
+		setEmailError(!isValidEmail);
+	};
 
 	return (
 		<div className={classes.container}>
@@ -42,10 +51,10 @@ const Reservation = () => {
 				<img className={classes.arrow} src={back} alt="back" />
 			</button>
 			<div className={classes.title}>
-				<h1 className={classes.walk}>Reserve your walk with your dog</h1>
+				<h1 className={classes.walk}>Reserve a walker for your dog</h1>
 			</div>
 			<div className={classes.inputs}>
-				<TextField 
+				<TextField
 					sx={{
 						width: 400,
 						margin: 1,
@@ -53,9 +62,23 @@ const Reservation = () => {
 					id="outlined-basic"
 					label="Name Surname"
 					variant="outlined"
+				/>  
+		
+				<TextField
+					sx={{
+						width: 400,
+						margin: 1,
+					}}
+					id="outlined-basic"
+					label="E-mail"
+					variant="outlined"
+					value={email}
+					onChange={handleEmailChange}
+					error={emailError}
+					helperText={emailError ? 'Please enter a valid email address' : ''}
 				/>
 
-				<TextField 
+				<TextField
 					sx={{
 						width: 400,
 						margin: 1,
@@ -77,7 +100,7 @@ const Reservation = () => {
 				</TextField>
 
 				<div className={classes.payment}>
-					<TextField 
+					<TextField
 						sx={{
 							display: "flex",
 							alignItems: "center",
@@ -99,7 +122,7 @@ const Reservation = () => {
 					<Button
 						sx={{
 							width: 200,
-							height: 50,
+							height: 55,
 							display: "flex",
 							alignItems: "center",
 						}}
