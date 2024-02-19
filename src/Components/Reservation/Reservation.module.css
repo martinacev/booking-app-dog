@@ -23,7 +23,7 @@
 }
 
 .menu {
-	max-height: 150px;
+display: flex;
 }
 
 .field {
@@ -74,4 +74,9 @@
 	color: #fff;
 	text-shadow: -2px -2px 0 #ff7b5f, 2px -2px 0 #ff7b5f, -2px 2px 0 #ff7b5f,
 		2px 2px 0 #ff7b5f;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
 }

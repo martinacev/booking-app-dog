@@ -3,6 +3,7 @@ import Booking from "./Components/Booking/Booking";
 import Mobile from "./Components/Mobile/Mobile";
 import "./App.css";
 import Reservation from "./Components/Reservation/Reservation";
+import Walker from "./Components/Walker/Walker";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 						}
 					/>
 					<Route path="/reservation" element={<Reservation />} />
+					<Route path="/dogwalkers" element={<Walker />} />
 				</Routes>
 			</div>
 		</Router>

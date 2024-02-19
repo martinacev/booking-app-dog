@@ -37,6 +37,10 @@ const Reservation = () => {
 		navigate("/");
 	};
 
+	const handleWalkersButton = () => {
+		navigate('/dogwalkers')
+	}
+
 	const handleEmailChange = (e) => {
 		const inputEmail = e.target.value;
 		setEmail(inputEmail);
@@ -89,7 +93,7 @@ const Reservation = () => {
 					defaultValue={dogBreeds[0]}
 				>
 					{dogBreeds.map((breed) => (
-						<MenuItem
+						<MenuItem 
 							className={classes.menu}
 							key={breed}
 							value={breed}
@@ -119,7 +123,7 @@ const Reservation = () => {
 						}}
 					/>
 
-					<Button
+					<Button onClick={handleWalkersButton}
 						sx={{
 							width: 200,
 							height: 55,
