@@ -41,6 +41,9 @@ const Reservation = () => {
 			<button onClick={navigateButton} className={classes.btn}>
 				<img className={classes.arrow} src={back} alt="back" />
 			</button>
+			<div className={classes.title}>
+				<h1 className={classes.walk}>Reserve your walk with your dog</h1>
+			</div>
 			<div className={classes.inputs}>
 				<TextField 
 					sx={{
@@ -48,7 +51,7 @@ const Reservation = () => {
 						margin: 1,
 					}}
 					id="outlined-basic"
-					label="Your Name Surname"
+					label="Name Surname"
 					variant="outlined"
 				/>
 

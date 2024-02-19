@@ -7,7 +7,13 @@ const Message = ({ onMessageChange }) => {
 
 	const handleButtonClick = () => {
 		onMessageChange(inputValue);
-		setInputValue(""); 
+		setInputValue("");
+	};
+
+	const handleInputKeyDown = (event) => {
+		if (event.key === "Enter") {
+			handleButtonClick();
+		}
 	};
 
 	return (
@@ -18,6 +24,7 @@ const Message = ({ onMessageChange }) => {
 					type="text"
 					value={inputValue}
 					onChange={(event) => setInputValue(event.target.value)}
+					onKeyDown={handleInputKeyDown}
 				/>
 				<button className={classes.send} onClick={handleButtonClick}>
 					{">"}
