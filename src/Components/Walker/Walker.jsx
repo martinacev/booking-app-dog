@@ -5,7 +5,6 @@ const Walker = () => {
 	return (
 		<div className={classes.container}>
 			<Employers />
-			
 		</div>
 	);
 };

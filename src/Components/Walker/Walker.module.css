@@ -2,9 +2,10 @@
 	display: flex;
 	width: 100%;
 	justify-content: center;
-  }
+	background-color: #ff7b5f;
+}
 
-  .person {
+.person {
 	width: 100%;
 	height: 50px;
 	display: flex;
@@ -19,7 +20,6 @@
 	width: 300px;
 	flex-direction: column;
 }
-
 
 .back {
 	border-radius: 20px;
@@ -73,15 +73,12 @@
 }
 
 .video {
-    display: flex;
-    margin-left: 60px;
-    width: 40px;
+	display: flex;
+	margin-left: 60px;
+	width: 40px;
 }
 
 .logo {
-    width: 30px;
-    color: black;
+	width: 30px;
+	color: black;
 }
-
-
-

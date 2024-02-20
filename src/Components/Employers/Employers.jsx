@@ -16,6 +16,7 @@ const Person = ({ name, image }) => (
 					<p className={classes.name}>{name}</p>
 					<p className={classes.active}>Active now</p>
 				</div>
+				
 			</div>
 		</div>
 	</div>
