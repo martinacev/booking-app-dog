@@ -3,6 +3,7 @@ import face from "../../../public/face.jpg";
 import natalia from "../../../public/grl.webp";
 import sebastian from '../../../public/heh.jpg';
 import caramel from '../../../public/caramel.jpg';
+import message from '../../../public/message.png';
 import PropTypes from 'prop-types';
 
 const Person = ({ name, image }) => (
@@ -16,8 +17,10 @@ const Person = ({ name, image }) => (
 					<p className={classes.name}>{name}</p>
 					<p className={classes.active}>Active now</p>
 				</div>
-				
 			</div>
+			<div className={classes.message}>
+					<img className={classes.chat} src={message} alt="message" />
+				</div>
 		</div>
 	</div>
 );
