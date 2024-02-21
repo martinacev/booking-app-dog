@@ -21,7 +21,6 @@ const Mobile = () => {
 					<Chat messageValue={messageValue} />
 					<Message onMessageChange={handleMessageChange} />
 				</div>
-				
 			</div>
 		</div>
 	);
