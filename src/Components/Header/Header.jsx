@@ -5,7 +5,6 @@ import camera from "../../../public/cam2.png";
 
 const Header = () => {
 	return (
-		<div>
 			<div className={classes.person}>
 				<div className={classes.btnBack}>
 					<button className={classes.back}>{`<`}</button>
@@ -24,7 +23,6 @@ const Header = () => {
 					<img className={classes.logo} src={camera} alt="camera" />
 				</div>
 			</div>
-		</div>
 	);
 };
 
