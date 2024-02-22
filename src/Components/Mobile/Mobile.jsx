@@ -1,16 +1,15 @@
+import  { useState, useCallback } from "react";
 import classes from "./Mobile.module.css";
 import Header from "../header/Header";
 import Chat from "../Chat/Chat";
 import Message from "../message/Message";
-import { useState } from "react";
 
 const Mobile = () => {
+	const [messageValue, setMessageValue] = useState("");
 
-	const [messageValue, setMessageValue] = useState('');
-
-	const handleMessageChange = (value) => {
+	const handleMessageChange = useCallback((value) => {
 		setMessageValue(value);
-	}
+	}, []); 
 
 	return (
 		<div className={classes.container}>
