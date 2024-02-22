@@ -89,7 +89,7 @@ const Reservation = () => {
 					id="outlined-select-currency"
 					select
 					label="Dog breed"
-					defaultValue={dogBreeds[0]}
+	
 				>
 					{dogBreeds.map((breed) => (
 						<MenuItem 

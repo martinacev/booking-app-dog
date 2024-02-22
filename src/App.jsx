@@ -11,15 +11,8 @@ function App() {
 		<Router>
 			<div className="container">
 				<Routes>
-					<Route
-						path="/"
-						element={
-							<>
-								<Mobile />
-								<Booking />
-							</>
-						}
-					/>
+					<Route path="/" element={<Mobile />} />
+					<Route  element={<Booking />} />
 					<Route path="/reservation" element={<Reservation />} />
 					<Route path="/dogwalkers" element={<Walker />} />
 				</Routes>
