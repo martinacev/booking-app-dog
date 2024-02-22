@@ -1,6 +1,8 @@
 import { useState } from "react";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import PropTypes from "prop-types";
 import classes from "./Message.module.css";
+
 
 const Message = ({ onMessageChange }) => {
 	const [inputValue, setInputValue] = useState("");
@@ -27,7 +29,7 @@ const Message = ({ onMessageChange }) => {
 					onKeyDown={handleInputKeyDown}
 				/>
 				<button className={classes.send} onClick={handleButtonClick}>
-					{">"}
+					<KeyboardArrowRightIcon />
 				</button>
 			</div>
 		</div>
