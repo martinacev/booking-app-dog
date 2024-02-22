@@ -7,6 +7,7 @@
 	height: 100vh;
 }
 
+
 .person {
 	width: 350px;
 	height: 50px;
@@ -114,4 +115,11 @@
 	justify-content: end;
 	width: 30px;
 	height: 30px;
+}
+
+.background {
+	background-color: #3f8097;
+	border-radius: 20px;
+	align-items: center;
+	justify-content: center;
 }

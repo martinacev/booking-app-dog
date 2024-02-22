@@ -1,7 +1,7 @@
 import classes from "./Mobile.module.css";
-import Header from "../Header/Header";
+import Header from "../header/Header";
 import Chat from "../Chat/Chat";
-import Message from "../Message/Message";
+import Message from "../message/Message";
 import { useState } from "react";
 
 const Mobile = () => {

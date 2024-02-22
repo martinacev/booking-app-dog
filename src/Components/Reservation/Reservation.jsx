@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const dogBreeds = [
-	"",
 	"German Shepherd",
 	"Bulldog",
 	"Labrador",
