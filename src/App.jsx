@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Booking from "./Components/booking/Booking";
-import Mobile from "./Components/mobile/Mobile";
+import Booking from "./components/Booking/Booking";
+import Mobile from "./components/Mobile/Mobile";
 import "./App.css";
-import Reservation from "./Components/reservation/Reservation";
-import Walker from "./Components/walker/Walker";
+import Reservation from "./components/Reservation/Reservation";
+import Walker from "./components/Walker/Walker";
 
 function App() {
 	return (

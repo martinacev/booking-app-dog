@@ -1,9 +1,9 @@
 import classes from "./Chat.module.css";
-import HisChat from "../hischat/HisChat";
-import MyChat from "../mychat/MyChat";
-import OfferChat from "../offerchat/OfferChat";
-import HalfOffer from "../halfoffer/HalfOffer";
-import FullOfer from "../fulloffer/FullOfer";
+import HisChat from "../Hischat/HisChat";
+import MyChat from "../Mychat/MyChat";
+import OfferChat from "../Offerchat/OfferChat";
+import HalfOffer from "../Halfoffer/HalfOffer";
+import FullOfer from "../Fulloffer/FullOfer";
 import RespondField from "../RespondField/RespondField";
 import PropTypes from "prop-types";
 

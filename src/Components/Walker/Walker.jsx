@@ -1,4 +1,4 @@
-import Employers from "../employers/Employers";
+import Employers from "../Employers/Employers";
 import classes from "./Walker.module.css";
 
 const Walker = () => {
